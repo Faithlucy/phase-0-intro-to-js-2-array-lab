@@ -17,11 +17,13 @@ function appendCat (name){
 }
 function prependCat (name){
     return["Arnold",...cats]
-}
+} 
 function removeLastCat (){
-    return (cats.slice(0, 1))
+    const newCats= cats.slice(0,-1)
+    return newCats
 }
 
 function removeFirstCat(){
-    return (cats.slice(0))
+    const newerCats= cats.slice(1)
+    return newerCats
 }
